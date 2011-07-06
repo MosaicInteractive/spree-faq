@@ -7,7 +7,7 @@
       <ul class="answers">
         <% category.questions.each do |question| %>
           <li>
-            <a class="question" id="<%= dom_id question -%>" href="#<%= "answer_#{question.id}" %>">
+            <a class="question" id="<%= dom_id question -%>"> 
               <%= h question.question -%>
             </a>
             <div class="answer" id="<%= "answer_#{question.id}"-%>">
